@@ -1,0 +1,185 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.ancho{
+    margin: 30px 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: white;
+    padding: 5px;
+}
+
+
+
+nav > a{
+    text-decoration: none;
+    color: purple;
+    padding: 20px;
+}
+
+nav > a:hover{
+    border-radius: 5px;
+    color: white;
+    background-color: purple;
+}
+
+#inicio{
+    background-image: url("https://images.pexels.com/photos/4857719/pexels-photo-4857719.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    
+}
+.info{
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+.titulo{
+    text-align: center;
+    color: purple;
+}
+
+.descripcion{
+    color: black;
+}
+
+.btn-ir-lugares{
+    text-align: center;
+}
+
+.btn-ir-lugares >a {
+    padding: 10px 50px;
+    border-radius: 5px;
+    background-color: purple;
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+
+.btn-ir-lugares >a:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.contenor-biografia{
+    display: flex;
+    gap: 30px;
+}
+#biografia{
+    padding: 30px;
+    background-color: purple;
+    border-radius: 10px;
+    color: white;
+}
+.imagen-dina{
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+h3{
+    font-size: 40px;
+}
+
+.caja-opinion{
+    padding: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.50);
+    border-radius: 10px;
+}
+
+.imagen-resena{
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
+
+#lugares{
+    display: flex;
+    gap: 10px;
+}
+
+form{
+    background-color: purple;
+    padding: 60px;
+    border-radius: 5px;
+    color: white;
+    display: grid;
+    place-items: center;
+}
+
+label{
+    display: block;
+    color: white;
+    margin-bottom: 5px;
+}
+
+input,textarea{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+#contacto{
+    width: 100%;
+}
+.titulo-formulario{
+    font-size: 40px;
+}
+
+
+@media (max-width: 768px){
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav > a{
+        width: 100%;
+        text-align: center;
+    }
+
+    .descripcion{
+        display: none;
+    }
+
+    .titulo{
+        font-size: 14px;
+        margin-bottom: 20px;
+       
+    }
+
+    .contenor-biografia{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: -40px
+
+    }
+
+    .contenor-biografia{
+        text-align: center;
+    }
+
+    #lugares{
+        flex-direction: column;
+    }
+
+    .titulo-formulario{
+     font-size: 18px;
+    }
+}
+
+input[type="submit"]{
+    margin-top: 10px;
+}
