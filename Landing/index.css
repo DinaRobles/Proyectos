@@ -178,6 +178,9 @@ input,textarea{
     .titulo-formulario{
      font-size: 18px;
     }
+    .ver-lugares{
+        display: none;
+    }
 }
 
 input[type="submit"]{
